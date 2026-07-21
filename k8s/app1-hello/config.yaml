@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-app-config
+data:
+  HELLO_APP_MESSAGE: "Hello from kubernetes ConfigMap!"
+
