@@ -6,9 +6,10 @@ name: CI Pipeline
 
 # Trigger the pipeline whenever code is pushed to main
 on:
-  push:
-    branches:
-      - main
+#   push:
+#     branches:
+#       - main
+  workflow_dispatch:
 
   # Also run CI for Pull Requests
   pull_request:
