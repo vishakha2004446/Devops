@@ -45,7 +45,8 @@ jobs:
                 context: docker/app1-hello/node
                 push: true
                 tags: |
-                    ${{secrets.DOCKER_USERNAME}}/hello-node:latest
+                     ${{ secrets.DOCKER_USERNAME }}/hello-spring:${{ github.sha }}
+                     ${{ secrets.DOCKER_USERNAME }}/hello-spring:${{ github.ref_name }}
 
 
           
