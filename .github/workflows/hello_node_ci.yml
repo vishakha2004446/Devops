@@ -40,12 +40,11 @@ jobs:
               password: ${{ secrets.DOCKER_PASSWORD }}
 
         - name: Build and Push Docker Image
-          uses: docker/build-push-action@v7
+          uses: docker/build-push-action@v6
           with:
                 context: docker/app1-hello/node
                 push: true
-                tags: |
-                     ${{ secrets.DOCKER_USERNAME }}/hello-node:latest
+                tags: vishakha12345/hello-node:latest
                    
 
 
