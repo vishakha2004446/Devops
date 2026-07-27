@@ -1,6 +1,5 @@
 name: Hello Spring Boot App to Docker
 
-
 on:
   workflow_dispatch:
   push:
