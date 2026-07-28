@@ -1,6 +1,10 @@
 name: Hello Python App to Docker
 on:
   push:
+    branches:
+      - main
+    paths:
+      - "docker/app1-hello/python/"
   workflow_dispatch:
 
 jobs: 
