@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app1-hello
-          image: embarkx/hello-spring:latest
+          image: vishakha12345/hello-node:latest
           # env:
           # - name: ENV_VALUE
           #   value: "Hello from app.yaml"
