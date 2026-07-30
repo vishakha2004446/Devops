@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app1-hello
-          image: vishakha12345/hello-node:latest
+          image: vishakha12345/hello-python:latest
           # env:
           # - name: ENV_VALUE
           #   value: "Hello from app.yaml"
@@ -34,7 +34,7 @@ spec:
                   key: HELLO_DB_PASSWORD
 
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
 
 ---
 apiVersion: v1
@@ -46,6 +46,6 @@ spec:
     app: app1-hello
   type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 3000
+      targetPort: 3000
       nodePort: 30001
